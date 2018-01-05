@@ -1,0 +1,28 @@
+{
+  "name": "auid",
+  "version": "1.0.0",
+  "description": "Acceptably Unique Identifiers",
+  "main": "auid.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaqmol/auid.git"
+  },
+  "keywords": [
+    "UUID",
+    "GUID",
+    "ID",
+    "KEY"
+  ],
+  "author": "Ronny Reichmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaqmol/auid/issues"
+  },
+  "homepage": "https://github.com/jaqmol/auid#readme",
+  "devDependencies": {
+    "jest": "^22.0.4"
+  }
+}
