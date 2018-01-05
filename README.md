@@ -1,0 +1,2 @@
+# auid
+Acceptably Unique Identifier
