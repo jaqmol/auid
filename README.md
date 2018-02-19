@@ -9,4 +9,6 @@ import auid from 'auid';
 const key = auid();
 ```
 
+Version 2: optimised length due to base62 instead of hex encoding.
+
 License: MIT

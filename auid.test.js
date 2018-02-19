@@ -5,6 +5,7 @@ const auid = require('./auid')
 
 test('matcher inline', () => {
   const testAuidsArr = [...(new Array(999))].map(() => auid())
+  console.log(testAuidsArr)
   const testAuidsSet = new Set(testAuidsArr)
   expect(testAuidsArr.length).toBe(testAuidsSet.size)
 })
