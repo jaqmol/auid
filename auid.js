@@ -1,7 +1,7 @@
 /* Copyright 2017 Ronny Reichmann */
 /* AUID Acceptably Unique Identifier */
 
-const encodingSet = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+const encodingSet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 const converter = require('./base-converter')(encodingSet)
 const randomBytes = require('crypto').randomBytes
 let currentCount = 0
