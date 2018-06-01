@@ -1,6 +1,6 @@
 {
   "name": "auid",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "description": "Acceptably Unique Identifiers",
   "main": "auid.js",
   "scripts": {
