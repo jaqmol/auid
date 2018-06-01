@@ -8,7 +8,9 @@ import auid from 'auid';
 // or: const auid = require('auid');
 const key = auid();
 ```
+## Features:
 
-Version 2: optimised length due to base62 instead of hex encoding.
+- Terse: Base62 instead of hex encoding
+- Sortable
 
 License: MIT
