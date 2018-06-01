@@ -11,17 +11,17 @@ const padFn = v => (s, l) => s.padStart(l, v)
 const pad = padFn(encodingSet.slice(0, 1))
 const utcMinus12 = 12 * 60
 const zoneOffset = () => (new Date()).getTimezoneOffset()
+const randomNum = () => parseInt(randomBytes(2).toString('hex'), 16)
 
 function auid () {
-  const zoneComp = pad(converter.encode(utcMinus12 + zoneOffset()), 2)
   const stampComp = converter.encode(Date.now())
   const countComp = pad(converter.encode(currentCount), 4)
   currentCount = currentCount === 11111111
     ? 0
     : currentCount + 1
-  const randomHex = randomBytes(2).toString('hex')
-  const randomComp = pad(converter.encode(parseInt(randomHex, 16)), 3)
-  return `${zoneComp}-${stampComp}-${countComp}-${randomComp}`
+  const zoneComp = pad(converter.encode(utcMinus12 + zoneOffset()), 2)
+  const randomComp = pad(converter.encode(randomNum()), 3)
+  return `${stampComp}-${countComp}-${zoneComp}-${randomComp}`
 }
 
 auid.BaseConverter = BaseConverter
